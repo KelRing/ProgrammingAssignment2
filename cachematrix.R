@@ -1,14 +1,11 @@
+## Caching the inverse of a matrix (instead of computing it over and over)
+
 ## Create an instance of 'makeCacheMatrix' 
 ## using private members x & m, 
 ## and public methods set, get, setmatrix, and getmatrix
 
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
-
 makeCacheMatrix <- function(x = matrix()) {
-	
+
 	m <- NULL
 	set <- function(y) {
 		x <<- y
@@ -25,11 +22,11 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Compute teh inverse of the matrix created in the above function
 ## This will return a matrix that is the inverse of 'x'
 
 cacheSolve <- function(x = matrix(), ...) {
-	
+
 	m<- x$getmatrix()
 	
 	if(!is.null(m)) {
